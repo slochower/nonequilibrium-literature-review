@@ -8,7 +8,7 @@ mv output/README-complete.md output/README.md
 # Generate OpenTimestamps
 python ci/opentimestamps-client/ots stamp \
  output/index.html \
- output/deep-review.pdf \
+ output/nonequilibrium-literature-review.pdf \
  output/README.md
 
 # Configure git
@@ -20,8 +20,8 @@ git remote set-url origin git@github.com:slochower/nonequilibrium-literature-rev
 
 # Decrypt and add SSH key
 openssl aes-256-cbc \
-  -K $encrypted_92858de03041_key \
-  -iv $encrypted_92858de03041_iv \
+  -K $encrypted_e7c6f2d0656b_key \
+  -iv $encrypted_e7c6f2d0656b_iv \
   -in ci/deploy.key.enc \
   -out ci/deploy.key -d
 eval `ssh-agent -s`
@@ -40,11 +40,11 @@ MESSAGE="\
 `git log --max-count=1 --format='%s'`
 
 This build is based on
-https://github.com/slochower/my-deep-review/commit/$TRAVIS_COMMIT.
+https://github.com/slochower/nonequilibrium-literature-review/commit/$TRAVIS_COMMIT.
 
 This commit was created by the following Travis CI build and job:
-https://travis-ci.org/slochower/my-deep-review/builds/$TRAVIS_BUILD_ID
-https://travis-ci.org/slochower/my-deep-review/jobs/$TRAVIS_JOB_ID
+https://travis-ci.org/slochower/nonequilibrium-literature-review/builds/$TRAVIS_BUILD_ID
+https://travis-ci.org/slochower/nonequilibrium-literature-review/jobs/$TRAVIS_JOB_ID
 
 [ci skip]
 
