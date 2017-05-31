@@ -32,5 +32,5 @@ pandoc \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
-  --output=output/deep-review.pdf \
+  --output=output/nonequilibrium-literature-review.pdf \
   $INPUT_PATH
