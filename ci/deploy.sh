@@ -5,7 +5,7 @@ set -o errexit
 envsubst < output/README.md > output/README-complete.md
 mv output/README-complete.md output/README.md
 
-Generate OpenTimestamps
+# Generate OpenTimestamps
 python ci/opentimestamps-client/ots stamp \
  output/index.html \
  output/deep-review.pdf \
