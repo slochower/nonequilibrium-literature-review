@@ -1,3 +1,18 @@
-# Literature
+# Output directory containing the formatted manuscript
 
-In this repository I'm going to see if the `deep-review` workflow is good at keeping track of recently read papers.
+The [`gh-pages`](https://github.com/slochower/nonequilibrium-literature-review/tree/gh-pages) branch hosts the contents of this directory at https://slochower.github.io/nonequilibrium-literature-review/.
+
+## Files
+
+This directory contains the following files, which are mostly ignored on the `master` branch:
+
++ [`index.html`](index.html) is an HTML manuscript.
++ [`github-pandoc.css`](github-pandoc.css) sets the display style for `index.html`.
++ [`nonequilibrium-literature-review.pdf`](nonequilibrium-literature-review.pdf) is a PDF manuscript.
++ `*.ots` files are OpenTimestamps which can be used to verify manuscript existence at or before a given time.
+  [OpenTimestamps](opentimestamps.org) uses the Bitcoin blockchain to attest to file hash existence.
+
+## Source
+
+The manuscripts in this directory were built from
+[`75c5fef7570b425e106a659ab83e92dcf0c61b7e`](https://github.com/greenelab/deep-review/commit/75c5fef7570b425e106a659ab83e92dcf0c61b7e).
