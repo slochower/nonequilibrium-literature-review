@@ -21,6 +21,7 @@ pandoc --verbose \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
   --css=github-pandoc.css \
+  --mathml \
   --output=output/index.html \
   $INPUT_PATH
 
