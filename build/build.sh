@@ -18,7 +18,7 @@ echo "Exporting HTML manuscript"
 pandoc --verbose \
   --from=markdown --to=html \
   --bibliography=$BIBLIOGRAPHY_PATH \
-  --csl=$CSL_PATH \
+#  --csl=$CSL_PATH \
   --metadata link-citations=true \
   --css=github-pandoc.css \
   --katex \
