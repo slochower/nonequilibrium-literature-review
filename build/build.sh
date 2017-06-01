@@ -30,7 +30,7 @@ pandoc --verbose \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --metadata link-citations=true \
   --css=github-pandoc.css \
-  --katex \
+  --mathjax \
   --output=output/index.html \
   $INPUT_PATH
 
