@@ -11,6 +11,7 @@ def get_short_doi(doi, cache={}, verbose=False):
     multiple API requests for the same DOI.
     """
     if doi in cache:
+        print(f'Using cache for {doi}...')
         return cache[doi]
     quoted_doi = urllib.request.quote(doi)
     url = 'http://shortdoi.org/{}?format=json'.format(quoted_doi)
@@ -30,6 +31,7 @@ def get_doi_citeproc(doi):
     Use Content Negotioation (http://citation.crosscite.org/docs.html) to
     retrieve the citeproc JSON citation for a DOI.
     """
+    print(f'Getting citation for {doi} using citeproc...')
     url = 'https://doi.org/' + urllib.request.quote(doi)
     header = {
         'Accept': 'application/vnd.citationstyles.csl+json',
@@ -51,6 +53,7 @@ def get_pubmed_citeproc(pubmed_id):
     https://www.ncbi.nlm.nih.gov/pmc/tools/ctxp/
     https://www.ncbi.nlm.nih.gov/pmc/utils/ctxp/samples
     """
+    print(f'Getting citation for {pubmed_id} using citeproc..')
     params = {
         'ids': pubmed_id,
         'report': 'citeproc'
@@ -78,6 +81,7 @@ def get_url_citeproc_greycite(url):
     Uses urllib.request.urlopen rather than requests.get due to
     https://github.com/kennethreitz/requests/issues/4023
     """
+    print(f'Getting citation for {url} using greycite..')
     response = requests.get(
         'http://greycite.knowledgeblog.org/json',
         params={'uri': url},
@@ -119,6 +123,7 @@ def get_doi_bibtex(doi):
     Use DOI Content Negotioation (http://crosscite.org/cn/) to retrieve a
     string with the bibtex entry.
     """
+    print(f'Getting citation for {doi} using bibtex from doi.org..')
     url = 'https://doi.org/' + urllib.request.quote(doi)
     header = {
         'Accept': 'application/x-bibtex',
@@ -132,6 +137,7 @@ def get_arxiv_bibtex(arxiv_id):
     """
     Use the arxiv2bib package to get the BibTex for an arXiv preprint.
     """
+    print(f'Getting citation for {arxiv_id} using bibtex from arxiv2bib..')
     import arxiv2bib
     ref, = arxiv2bib.arxiv2bib([arxiv_id])
     if isinstance(ref, arxiv2bib.ReferenceErrorInfo):

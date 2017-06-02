@@ -17,7 +17,7 @@ def validate_reference(ref):
     source, tail = ref.lstrip('@').split(':', 1)
     if not tail:
         return f'{ref} → does not specify its source, e.g. "@doi:" or "@pmid:"'
-    if source not in {'doi', 'pmid', 'arxiv', 'url', 'tag'}:
+    if source not in {'doi', 'pmid', 'arxiv', 'url', 'tag', 'grey'}:
         return f'{ref} → source "{source}" is not valid'
     return None
 
@@ -116,6 +116,9 @@ def citation_to_metadata(citation, cache={}, override={}):
     elif source == 'url':
         print('Getting citation from URL...')
         result['citeproc'] = metadata.get_url_citeproc(identifer)
+    elif source == 'grey':
+        print('Getting citation from URL via Greycite...')
+        result['citeproc'] = metadata.get_url_citeproc_greycite(identifer)
     else:
         msg = f'Unsupported citation  source {source} in {citation}'
         raise ValueError(msg)
@@ -139,6 +142,7 @@ citeproc_type_fixer = {
     'book-chapter': 'chapter',
     'posted-content': 'manuscript',
     'proceedings-article': 'paper-conference',
+    'component' : 'article-journal'
 }
 
 # Remove citeproc keys to fix pandoc-citeproc errors

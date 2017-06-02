@@ -26,4 +26,4 @@ A new synchronous rotary molecular motor from Feringa's group.
 
 ## Experiments
 
-### [@doi:10.1021/cr970027]
+### [@doi:10.1021/cr970027+]

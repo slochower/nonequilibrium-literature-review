@@ -1,4 +1,41 @@
 [
+  {
+  "standard_citation": "doi:10.1021/cr970027+",
+  "type": "article-journal",
+  "title": "Cyclodextrin rotaxanes and polyrotaxanes",
+  "container-title": "Chemical Reviews",
+  "URL": "http://pubs.acs.org/doi/full/10.1021/cr970027%2B",
+  "author": [
+      {
+        "family": "Wenz",
+        "given": "Gerhard"
+      },
+      {
+        "family": "Han",
+        "given": "Bao-Hang"
+      },
+      {
+        "family": "Müller",
+        "given": "Axel"
+      }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     "2006"
+    ]
+   ]
+  },
+  "accessed": {
+   "date-parts": [
+    [
+     "2017",
+     5,
+     19
+    ]
+   ]
+  }
+ },
  {
   "standard_citation": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
   "type": "article-journal",
