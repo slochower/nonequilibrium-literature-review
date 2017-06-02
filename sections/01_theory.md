@@ -1,7 +1,7 @@
 ## Theory
 
-### [@arxiv:1703.05283v3]
-Brown and Sivak conclude that minimizing the depth (and number, I think) of intermediate metastable states maximizes the flux.
+### Allocating dissipation across a molecular machine cycle to maximize flux
+Brown and Sivak [@arxiv:1703.05283v3] conclude that minimizing the depth (and number, I think) of intermediate metastable states maximizes the flux.
 
 Their model defines forward and reverse rate constants similar to our model, although they deal with the input energy in a somewhat different manner. In our case, nonequilibrium populations drive the system. Here, the energy difference between the initial and final state of the system ($E_1$) drive the flux (see Figure @fig:bs). 
 
@@ -21,10 +21,17 @@ with dissipation ((2)).
 
 This article interprets the results of Wagoner and Dill [@doi:10.1021/acs.jpcb.6b02776] that flux is affected differently by changing the individual rate constants for barrier crossing.
 
-### [@url:http://science.sciencemag.org/content/sci/356/6341/964]
-A new synchronous rotary molecular motor from Feringa's group. 
+### Locked synchronous rotor motion in a molecular motor
+A new synchronous rotary molecular motor from Feringa's group [@url:http://science.sciencemag.org/content/sci/356/6341/964]. Štacko, et al. demonstrate controlled rotary and translational motion in a geared, unidirectional molecular motor. This motor is based off their 2nd generation ones that was dicussed at ACS 2017; there is a photochemical isomerization and then a thermal helix inversion. Now, by intorducing a new chemical substiuent (napthalene or biaryl here),  
+
+Random, thermal motions of the napthalene are suppressed. 
+
+A computational study was undertaken... 
+
+Helix inversion takes a reasonable 5.4 $\pm$ 1.8 seconds.
 
 ## Experiments
 
-### [@doi:10.1021/cr970027+]
-Cyclodextrins...
+### Cyclodextrin Rotaxanes and Polyrotaxanes
+
+[@doi:10.1021/cr970027+]
