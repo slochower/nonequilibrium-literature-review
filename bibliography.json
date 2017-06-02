@@ -109,6 +109,54 @@
     "id": "unPH1ffS"
   },
   {
+    "URL": "http://science.sciencemag.org/content/sci/356/6341/964",
+    "greycite-canonical-uri": "http://science.sciencemag.org/content/356/6341/964",
+    "title": "Locked synchronous rotor motion in a molecular motor",
+    "container-title": "Science",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Štacko",
+        "given": "Peter"
+      },
+      {
+        "family": "Kistemaker",
+        "given": "Jos C. M."
+      },
+      {
+        "family": "van Leeuwen",
+        "given": "Thomas"
+      },
+      {
+        "family": "Chang",
+        "given": "Mu-Chieh"
+      },
+      {
+        "family": "Otten",
+        "given": "Edwin"
+      },
+      {
+        "family": "Feringa",
+        "given": "Ben L."
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-06-02 01:28:15",
+    "archives": [
+      "http://wayback.archive.org/web/http://science.sciencemag.org/content/sci/356/6341/964"
+    ],
+    "type": "webpage",
+    "id": "trvh1E8U"
+  },
+  {
     "URL": "https://arxiv.org/abs/1703.05283v3",
     "abstract": "Biomolecular machines consume free energy to break symmetry and make directed progress. Nonequilibrium ATP concentrations are the typical free energy source, with one cycle of a molecular machine consuming a certain number of ATP, providing a fixed free energy budget. Since evolution is expected to favor rapid-turnover machines that operate efficiently, we investigate how this free energy budget can be allocated to maximize flux. Unconstrained optimization eliminates intermediate metastable states, indicating that flux is enhanced in molecular machines with fewer states. When maintaining a set number of states, we show that—in contrast to previous findings—the flux-maximizing allocation of dissipation is not even. This result is consistent with the coexistence of both ‘irreversible’ and reversible transitions in molecular machine models that successfully describe experimental data, which suggests that in evolved machines different transitions differ significantly in their dissipation.",
     "author": [

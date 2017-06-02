@@ -120,5 +120,59 @@
     "standard_citation": "arxiv:1703.05283v3",
     "bibtex": "@article{1DCUa6egE,\n abstract = {Biomolecular machines consume free energy to break symmetry and make directed\nprogress. Nonequilibrium ATP concentrations are the typical free energy source, with one cycle of a molecular machine consuming a certain number of ATP, providing a fixed free energy budget. Since evolution is expected to favor\nrapid-turnover machines that operate efficiently, we investigate how this free\nenergy budget can be allocated to maximize flux. Unconstrained optimization\neliminates intermediate metastable states, indicating that flux is enhanced in\nmolecular machines with fewer states. When maintaining a set number of states, we show that---in contrast to previous findings---the flux-maximizing\nallocation of dissipation is not even. This result is consistent with the\ncoexistence of both `irreversible' and reversible transitions in molecular\nmachine models that successfully describe experimental data, which suggests\nthat in evolved machines different transitions differ significantly in their\ndissipation.},\n archiveprefix = {arXiv},\n author = {Aidan I Brown and David A Sivak},\n eprint = {1703.05283v3},\n file = {1703.05283v3.pdf},\n month = {Mar},\n primaryclass = {cond-mat.stat-mech},\n title = {Allocating dissipation across a molecular machine cycle to maximize flux},\n url = {https://arxiv.org/abs/1703.05283v3},\n year = {2017}\n}\n\n",
     "citation_id": "1DCUa6egE"
+  },
+  "url:http://science.sciencemag.org/content/sci/356/6341/964": {
+    "source": "url",
+    "identifer": "http://science.sciencemag.org/content/sci/356/6341/964",
+    "standard_citation": "url:http://science.sciencemag.org/content/sci/356/6341/964",
+    "citeproc": {
+      "URL": "http://science.sciencemag.org/content/sci/356/6341/964",
+      "greycite-canonical-uri": "http://science.sciencemag.org/content/356/6341/964",
+      "title": "Locked synchronous rotor motion in a molecular motor",
+      "container-title": "Science",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            2
+          ]
+        ]
+      },
+      "author": [
+        {
+          "family": "Štacko",
+          "given": "Peter"
+        },
+        {
+          "family": "Kistemaker",
+          "given": "Jos C. M."
+        },
+        {
+          "family": "van Leeuwen",
+          "given": "Thomas"
+        },
+        {
+          "family": "Chang",
+          "given": "Mu-Chieh"
+        },
+        {
+          "family": "Otten",
+          "given": "Edwin"
+        },
+        {
+          "family": "Feringa",
+          "given": "Ben L."
+        }
+      ],
+      "greycite-status": "Scanned",
+      "greycite-scanned": "2017-06-02 01:28:15",
+      "archives": [
+        "http://wayback.archive.org/web/http://science.sciencemag.org/content/sci/356/6341/964"
+      ],
+      "type": "webpage",
+      "id": "trvh1E8U"
+    },
+    "citation_id": "trvh1E8U"
   }
 }
