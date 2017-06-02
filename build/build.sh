@@ -36,7 +36,7 @@ echo "Exporting PDF manuscript"
 # But we want the path to be relative so that the HMTL file,
 # served from gh-pages looks at the relative path.
 
-cd ../output
+cd output
 
 pandoc --verbose \
   --from=markdown --to=html5 \
