@@ -26,7 +26,7 @@ echo "Exporting HTML manuscript"
 #  $INPUT_PATH
 
 pandoc --verbose \
-  --from=markdown --to=html \
+  --from=markdown --to=html5 \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --metadata link-citations=true \
   --css=github-pandoc.css \
