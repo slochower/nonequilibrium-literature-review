@@ -47,7 +47,7 @@ pandoc --verbose \
   --css=../output/github-pandoc.css \
   --katex \
   --output=../output/nonequilibrium-literature-review.pdf \
-  $INPUT_PATH
+  ../$INPUT_PATH
 
 # echo "...using LaTeX"
 # pandoc --verbose \
