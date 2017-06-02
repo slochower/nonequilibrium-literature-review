@@ -15,6 +15,10 @@ mkdir -p output
 echo "Copying images"
 cp -R sections/images output/
 
+# Check for badness in the .json
+grep -A 10 -B 10 "component" $BIBLIOGRAPHY_PATH
+
+
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
 echo "Exporting HTML manuscript"
