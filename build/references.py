@@ -157,15 +157,11 @@ with gen_dir.joinpath('stats.json').open('wt') as write_file:
 # Convert to citation_id citations for pandoc
 converted_text = text
 for old, new in zip(ref_df.text, ref_df.citation_id):
-    print('Trying to convert {} to {}'.format(old, new))
-    print('Probably finding the fig and scanning...')
-    print('Maybe modify this regex to ignore fig...')
     old = re.escape(old)
     new = f'@{new}'
     converted_text = re.sub(old + '(?=[\s\]])', new, converted_text)
 # Semicolon separate multiple refernces for pandoc-citeproc
 converted_text = semicolon_separate_references(converted_text)
-
 # Template using jina2
 template = jinja2.Template(converted_text)
 converted_text = template.render(**stats)
