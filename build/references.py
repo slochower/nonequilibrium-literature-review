@@ -82,6 +82,7 @@ def get_standard_citatation(citation, cache, override):
     Returns (None, None) if citation metadata not retrievable.
     """
     try:
+        print('Trying metadata cache for {}...'.format(citation))
         metadata = citation_to_metadata(citation, cache, override)
         return metadata['standard_citation'], metadata['citation_id']
     except Exception as e:

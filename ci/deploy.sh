@@ -54,7 +54,9 @@ $TRAVIS_COMMIT_MESSAGE
 "
 
 # Deploy the reference data to references
+echo "Deploying references branch..."
 ghp-import --push --branch=references --message="$MESSAGE" references/generated
 
+echo "Deploying gh-pages branch..."
 # Deploy the output to gh-pages
 ghp-import --push --branch=gh-pages --message="$MESSAGE" output

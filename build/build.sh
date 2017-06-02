@@ -44,3 +44,7 @@ pandoc \
   --metadata link-citations=true \
   --output=output/nonequilibrium-literature-review.pdf \
   $INPUT_PATH
+
+# Move images to output directory
+echo "Copying images"
+cp -R sections/images output/images
