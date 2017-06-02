@@ -23,14 +23,19 @@
 <h2 id="theory">Theory</h2>
 <h3 id="dcua6ege"><span class="citation" data-cites="1DCUa6egE">(Brown and Sivak <a href="#ref-1DCUa6egE">2017</a>)</span></h3>
 <p>Brown and Sivak conclude that minimizing the depth (and number, I think) of intermediate metastable states maximizes the flux.</p>
-<p>Their model defines forward and reverse rate constants similar to our model, although they deal with the input energy in a somewhat different manner. In our case, nonequilibrium populations drive the system. Here, the energy difference between the initial and final state of the system drive the population (see figure <a href="#fig:1">1</a>).</p>
-<p>The forward rate constants from state <span class="math inline">i</span> to <span class="math inline">j</span> are <span class="math inline">k^{+}_{ij}</span> and these are reversible transitions. The is <span class="math inline">k^{+}_{ij} P_{i}</span>, where <span class="math inline">P_{i}</span> is the probability in bin (or state) <span class="math inline">i</span>. There is a total free energy budget <span class="math inline">\sigma_\text{tot}</span> that describes the free energy difference across the cycle. This seems a little strange to me, but perhaps this is the same as saying the free energy from ATP hydrolysis is what drives each cycle.</p>
+<p>Their model defines forward and reverse rate constants similar to our model, although they deal with the input energy in a somewhat different manner. In our case, nonequilibrium populations drive the system. Here, the energy difference between the initial and final state of the system (<span class="math inline">E_1</span>) drive the flux (see Figure <a href="#fig:bs">1</a>).</p>
 <figure>
-<img src="./images/brown-2017-figure2.png" alt="Figure 1: " id="fig:1" /><figcaption>Figure 1: </figcaption>
+<img src="./images/brown-2017-figure2.png" alt="Figure 1: The two state model from Brown and Sivak." id="fig:bs" /><figcaption>Figure 1: The two state model from Brown and Sivak.</figcaption>
 </figure>
-<p>A corollary of their central claim is that when barriers are lower, transitions are faster, and flux increases. The authors also claim that flux is maximized by reducing the number of metastable states, i.e., turning a three state system into a two state system.</p>
+<p>Raising the barrier (<span class="math inline">E_2</span>), decreases the flux. Each barrier is associate with some energy &quot;dissipation&quot; between the initial and final energy states (I think this is just a free energy difference <span class="math inline">\Delta E</span> but there is probably some reason why they chose <span class="math inline">\sigma</span> for these). It turns out that maximum flux does not occur when there is an even dissipation of energy at each barrier. Rather, there is an optimal distribution of these energy dissipation terms that depends on the rate constants for each barrier. There may be a way to use this information to look at the evolved surface splines, although the evolved splines have varying number of peaks and troughs.</p>
+<blockquote>
+<p>We find an unequal optimal dissipation allocation occurs when: the nonequilibrium steady-state flux is maximized, rather than an efficiency or power; optimization is subject to fixed total dissipation budget per cycle, rather than fixed flux or entropy production rate; cycle transitions have different bare rate constants, corresponding to different barrier heights; and the ratio of forward and reverse rate constants varies exponentially, not linearly, with dissipation ((2)).</p>
+</blockquote>
+<p>This article interprets the results of Wagoner and Dill <span class="citation" data-cites="aWrqnjWo">(Wagoner and Dill <a href="#ref-aWrqnjWo">2016</a>)</span> that flux is affected differently by changing the individual rate constants for barrier crossing.</p>
 <h3 id="trvh1e8u"><span class="citation" data-cites="trvh1E8U">(Štacko et al. <a href="#ref-trvh1E8U">2017</a>)</span></h3>
 <p>A new synchronous rotary molecular motor from Feringa's group.</p>
+<h2 id="experiments">Experiments</h2>
+<h3 id="mfpqls05"><span class="citation" data-cites="MfpqLs05">(n.d.)</span></h3>
 <h2 id="references" class="unnumbered">References</h2>
 <div id="refs" class="references">
 <div id="ref-1DCUa6egE">
@@ -38,6 +43,12 @@
 </div>
 <div id="ref-trvh1E8U">
 <p>Štacko, Peter, Jos C. M. Kistemaker, Thomas van Leeuwen, Mu-Chieh Chang, Edwin Otten, and Ben L. Feringa. 2017. “Locked Synchronous Rotor Motion in a Molecular Motor.” <em>Science</em>. June 2. <a href="http://science.sciencemag.org/content/sci/356/6341/964" class="uri">http://science.sciencemag.org/content/sci/356/6341/964</a>.</p>
+</div>
+<div id="ref-aWrqnjWo">
+<p>Wagoner, Jason A., and Ken A. Dill. 2016. “Molecular Motors: Power Strokes Outperform Brownian Ratchets.” <em>The Journal of Physical Chemistry B</em> 120 (26). American Chemical Society (ACS): 6327–36. doi:<a href="https://doi.org/10.1021/acs.jpcb.6b02776">10.1021/acs.jpcb.6b02776</a>.</p>
+</div>
+<div id="ref-MfpqLs05">
+<p>n.d. American Chemical Society (ACS). doi:<a href="https://doi.org/10.1021/cr970027">10.1021/cr970027</a>.</p>
 </div>
 </div>
 </body>
