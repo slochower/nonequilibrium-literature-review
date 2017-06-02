@@ -16,8 +16,8 @@ echo "Copying images"
 cp -R sections/images output/
 
 # This may not be robust, but I found one article type that was "component" and 
-# crashed pandoc-citeproc
-sed -i 's/component/article-journal/' citations.json
+# crashed pandoc-citeproc. I think we could fix this upstream in metadata.py.
+sed -i 's/component/article-journal/' $BIBLIOGRAPHY_PATH
 
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
