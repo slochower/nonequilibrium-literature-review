@@ -3,9 +3,9 @@
 ### [@arxiv:1703.05283v3]
 Brown and Sivak conclude that minimizing the depth (and number, I think) of intermediate metastable states maximizes the flux.
 
-Their model defines forward and reverse rate constants similar to our model, although they deal with the input energy in a somewhat different manner. In our case, nonequilibrium populations drive the system. Here, the energy difference between the initial and final state of the system ($E_1$) drive the flux (see Figure @fig:1). 
+Their model defines forward and reverse rate constants similar to our model, although they deal with the input energy in a somewhat different manner. In our case, nonequilibrium populations drive the system. Here, the energy difference between the initial and final state of the system ($E_1$) drive the flux (see Figure @fig:bs). 
 
-![The two state model from Brown and Sivak.](./images/brown-2017-figure2.png){ #fig:1 }
+![The two state model from Brown and Sivak.](./images/brown-2017-figure2.png){ #fig:bs }
 
 Raising the barrier ($E_2$), decreases the flux. Each barrier is associate with some energy "dissipation" between the initial and final energy states (I think this is just a free energy difference $\Delta E$ but there is probably some reason why they chose $\sigma$ for these). It turns out that maximum flux does not occur when there is an even dissipation of energy at each barrier. Rather, there is an optimal distribution of these energy dissipation terms that depends on the rate constants for each barrier. There may be a way to use this information to look at the evolved surface splines, although the evolved splines have varying number of peaks and troughs.
 

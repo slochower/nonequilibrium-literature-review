@@ -13,7 +13,11 @@ INPUT_PATH=references/generated/all-sections.md
 mkdir -p output
 # Move images to output directory
 echo "Copying images"
-cp -R sections/images output/images
+cp -R sections/images output/
+
+# This may not be robust, but I found one article type that was "component" and 
+# crashed pandoc-citeproc
+sed 's/component/article-journal/' citations.json
 
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
