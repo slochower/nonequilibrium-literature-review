@@ -27,14 +27,23 @@ pandoc --verbose \
 
 # Create PDF outpout
 echo "Exporting PDF manuscript"
+# pandoc --verbose \
+#   --from=markdown --to=html5 \
+#   --filter pandoc-fignos \
+#   --bibliography=$BIBLIOGRAPHY_PATH \
+#   --csl=$CSL_PATH \
+#   --metadata link-citations=true \
+#   --css=github-pandoc.css \
+#   --katex \
+#   --output=output/nonequilibrium-literature-review.pdf \
+#   $INPUT_PATH
+echo "...using LaTeX"
 pandoc --verbose \
-  --from=markdown --to=html5 \
+  --from=markdown \
   --filter pandoc-fignos \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
-  --css=github-pandoc.css \
-  --katex \
   --output=output/nonequilibrium-literature-review.pdf \
   $INPUT_PATH
 
