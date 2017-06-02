@@ -26,9 +26,9 @@ install:
   - source activate literature
 script:
   - sh build/build.sh
-cache:
-  directories:
-    - references/generated
+# cache:
+#   directories:
+#     - references/generated
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
     test $TRAVIS_PULL_REQUEST = "false" &&

@@ -2,7 +2,7 @@ set -o errexit
 
 # Generate reference information
 echo "Retrieving and processing reference metadata"
-rm references/generated/bibliography.json
+# rm references/generated/bibliography.json
 (cd build && python references.py)
 
 # pandoc settings
