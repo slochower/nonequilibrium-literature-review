@@ -17,7 +17,7 @@ cp -R sections/images output/
 
 # This may not be robust, but I found one article type that was "component" and 
 # crashed pandoc-citeproc
-sed 's/component/article-journal/' citations.json
+sed -i 's/component/article-journal/' citations.json
 
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
