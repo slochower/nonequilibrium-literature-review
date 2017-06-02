@@ -2,6 +2,7 @@ set -o errexit
 
 # Generate reference information
 echo "Retrieving and processing reference metadata"
+rm references/generated/bibliography.json
 (cd build && python references.py)
 
 # pandoc settings
@@ -14,10 +15,6 @@ mkdir -p output
 # Move images to output directory
 echo "Copying images"
 cp -R sections/images output/
-
-# Check for badness in the .json
-grep -A 10 -B 10 "component" $BIBLIOGRAPHY_PATH
-
 
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
