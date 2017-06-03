@@ -55,10 +55,11 @@ def get_brackets_without_reference(text):
     Find bracketed text that does not start with @. Does not match
     brackets that are followed by an open parenthesis.
     """
-    pattern = re.compile(r'(\[[^@][^\]]*?\])[^(]', flags=re.DOTALL)
-    images = re.compile(r'(\!\[.+\])')
-    not_images = 
-
+    # pattern = re.compile(r'(\[[^@][^\]]*?\])[^(]', flags=re.DOTALL)
+    # This should ignore brackets without @ that don't have an !
+    # before them (which are images in pandoc)
+    pattern = re.compile(r'(?<!\!)(\[(?!\@).+\])[^(]', flags=re.DOTALL)
+    # images = re.compile(r'(\!\[.+\])')
     return list(pattern.findall(text))
 
 
