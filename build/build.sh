@@ -46,7 +46,6 @@ pandoc --verbose \
   --csl=../$CSL_PATH \
   --metadata link-citations=true \
   --css=../output/github-pandoc.css \
-  --mathjax \
   --output=../output/nonequilibrium-literature-review.pdf \
   ../$INPUT_PATH
 
