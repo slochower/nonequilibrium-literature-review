@@ -40,12 +40,13 @@ echo "Exporting PDF manuscript"
 cd output
 
 pandoc --verbose \
-  --from=markdown --to=html5 \
+  --from=markdown --to=html \
   --filter pandoc-fignos \
   --bibliography=../$BIBLIOGRAPHY_PATH \
   --csl=../$CSL_PATH \
   --metadata link-citations=true \
   --css=../output/github-pandoc.css \
+  --mathml \
   --output=../output/nonequilibrium-literature-review.pdf \
   ../$INPUT_PATH
 
