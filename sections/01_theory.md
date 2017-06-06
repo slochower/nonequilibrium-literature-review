@@ -10,8 +10,7 @@ case, nonequilibrium populations drive the system. Here, the energy difference
 between the initial and final state of the system ($E_1$) drive the flux (see
 Figure @fig:bs).
 
-![The two state model from Brown and Sivak.](./images/brown-2017-figure2.png){
-![#fig:bs }
+![The two state model from Brown and Sivak.](./images/brown-2017-figure2.png){ #fig:bs }
 
 Raising the barrier ($E_2$), decreases the flux. Each barrier is associate with
 some energy "dissipation" between the initial and final energy states (I think
