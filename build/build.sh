@@ -40,7 +40,7 @@ echo "Exporting PDF manuscript"
 cd output
 
 pandoc --verbose \
-  --from=markdown --to=html \
+  --from=markdown --to=html5 \
   --filter pandoc-fignos \
   --bibliography=../$BIBLIOGRAPHY_PATH \
   --csl=../$CSL_PATH \
